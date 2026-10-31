@@ -1,0 +1,14 @@
+{
+  "geode": "$GEODE_VERSION",
+  "gd": {
+    "win": "2.2081",
+    "android": "2.2081"
+  },
+  "id": "tatarhost.geod",
+  "name": "Geod Studio",
+  "version": "v0.1.0",
+  "developer": "tatarhost",
+  "description": "A mobile-friendly in-game script editor and runtime for Geometry Dash.",
+  "repository": "https://github.com/tatarhost/geod",
+  "settings": {}
+}

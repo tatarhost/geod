@@ -1,0 +1,9 @@
+/build/
+/build-*/
+/cmake-build-*/
+/.vscode/
+/.idea/
+*.geode
+*.pdb
+*.dbg
+*.sym
