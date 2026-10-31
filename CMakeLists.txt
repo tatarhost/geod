@@ -7,11 +7,11 @@ set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 project(GeodStudio VERSION 0.1.0)
 
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
-add_library(\${PROJECT_NAME} SHARED \${SOURCES})
+add_library(${PROJECT_NAME} SHARED ${SOURCES})
 
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "GEODE_SDK is not defined. Install the Geode SDK first.")
 endif()
 
-add_subdirectory($ENV{GEODE_SDK} \${CMAKE_CURRENT_BINARY_DIR}/geode)
-setup_geode_mod(\${PROJECT_NAME})
+add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
+setup_geode_mod(${PROJECT_NAME})
